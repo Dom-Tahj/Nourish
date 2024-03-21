@@ -14,7 +14,6 @@
     font-size: 18px;
   }
   
-  /* navbar */
   .navbar {
     background-color: aliceblue;
     padding: 10px 20px;
@@ -25,13 +24,11 @@
     min-height: 70px;
   }
   
-  /* logo  */
   .logo {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  /* ul  */
   .navMenu {
     display: flex;
     justify-content: space-between;
@@ -39,10 +36,8 @@
     gap: 60px;
   }
   
-  /* media queries */
   @media screen and (max-width: 780px){
     
-    /* hamburger */
     .hamburger {
       display: block;
       cursor: pointer;
@@ -58,7 +53,6 @@
           transition: 0.3s ease-in-out;
       }
   
-    /* adding active class to the bars  */
     .hamburger.active .bar:nth-child(2){
       opacity: 0;
     }
@@ -69,7 +63,6 @@
       transform: translateY(-8px) rotate(-45deg);
     }
   
-    /* navMenu */
     .navMenu{
       position: absolute;
       flex-direction: column;
