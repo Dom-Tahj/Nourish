@@ -3,6 +3,7 @@ import { handleFetch } from './utils.js';
 import { API_ID, API_KEY } from './config.js'
 import NavBar from './components/NavBar.jsx';
 import './App.css'
+import HomePage from './components/HomePage.jsx';
 
 function App() {
   const [data, setData] = useState({})
@@ -19,8 +20,7 @@ function App() {
   return (
     <div>
       <NavBar color='black' title="Nourish" />
-      <h1>Nourish</h1>
-      <h2>Wellness Starts at the Stomach</h2>
+      <HomePage />
       <div className="ui container"></div>
     </div>
   );
