@@ -5,6 +5,7 @@ import NavBar from './components/NavBar.jsx';
 import './App.css'
 import HomePage from './components/HomePage.jsx';
 
+
 function App() {
   const [data, setData] = useState({})
 
@@ -14,8 +15,8 @@ function App() {
       if (data) setData(data)
       if (error) setError(error.message)
     }
-    fetchData();
-  }, []); 
+  fetchData();
+  }, []); // Empty dependency array to run only once on component mount
 
   return (
     <div>
